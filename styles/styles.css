@@ -36,7 +36,7 @@ font-family: 'Ubuntu Mono', monospace;*/
     flex-wrap: wrap;
 }
 
-.nav__list {
+.nav__list{
     display: flex;
     list-style: none;
     text-align: center;
@@ -45,14 +45,18 @@ font-family: 'Ubuntu Mono', monospace;*/
     flex-wrap: wrap;
 }
 
-.nav__list--item {
+.efecto__nav:hover{
+    transform: scale(1.2);
+ }
+.nav__list--item{
     font-family: 'Red Hat Display', sans-serif;
     color: rgb(232, 219, 190);
     font-size: 30px;
     text-decoration: none;
-    margin: 10px;
-}
+    margin: 20px;
+    height: 50px;
 
+}
 /*fin clases del header*/
 /*clases del main del index*/
 .main__section {
