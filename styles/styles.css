@@ -14,7 +14,7 @@ font-family: 'Ubuntu Mono', monospace;*/
 /* aca comienzan las clases del index */
 /* clases del header*/
 .header__section {
-    background-color: rgb(28, 26, 26);
+    background-color: rgb(86, 81, 81);
     display: flex;
     flex-wrap: wrap;
 }
@@ -43,18 +43,18 @@ font-family: 'Ubuntu Mono', monospace;*/
     margin-left: 55px;
     flex-wrap: wrap;
 }
+.link-light{
+    color: rgb(235, 210, 154);
+}
 
 .efecto__nav:hover{
     transform: scale(1.2);
  }
 .nav__list--item{
     font-family: 'Red Hat Display', sans-serif;
-    color: rgb(232, 219, 190);
+    color:rgb(232, 219, 190);
     font-size: 30px;
     text-decoration: none;
-    margin: 20px;
-    height: 50px;
-
 }
 /*fin clases del header*/
 /*clases del main del index*/
@@ -249,7 +249,7 @@ font-family: 'Ubuntu Mono', monospace;*/
 
 .icon__spotify {
     display: flex;
-    width: 80px;
+    width: 100px;
     margin-top: 120px;
     padding-right: 40px;
     padding-left: 10px;
@@ -406,7 +406,7 @@ font-family: 'Ubuntu Mono', monospace;*/
 .card__title--blog {
     color: rgb(132, 242, 242);
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 23px;
     background-color: rgb(86, 81, 81);
         text-align: left;
     padding: 5px;
@@ -449,7 +449,7 @@ font-family: 'Ubuntu Mono', monospace;*/
     font-family: 'Red Hat Display', sans-serif;
     color: rgb(132, 242, 242);
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     margin: 50px;
 }
 .buttom__send {
@@ -459,10 +459,11 @@ font-family: 'Ubuntu Mono', monospace;*/
     border-radius: 10%;
     font-family: 'Red Hat Display', sans-serif;
     border: none;
+    font-size: 20px;
 }
 .form__textarea {
     width: 200px;
-    height: 50px;
+    height: 100px;
     margin-right: 50px;
 }
 /*fin estilos contacto*/
