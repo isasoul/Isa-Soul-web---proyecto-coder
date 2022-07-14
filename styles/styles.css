@@ -3,7 +3,6 @@
 * {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 /*font-family: 'Grape Nuts', cursive;
@@ -71,7 +70,7 @@ font-family: 'Ubuntu Mono', monospace;*/
 }
 
 .container__video {
-    width: 100vw;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -135,7 +134,7 @@ font-family: 'Ubuntu Mono', monospace;*/
 
 .img__grid {
     grid-area: img;
-    width: 100vw;
+    width: 100%;
     height: 800px;
     object-fit: cover;
 
@@ -184,6 +183,7 @@ font-family: 'Ubuntu Mono', monospace;*/
 
 .footer_list {
     display: flex;
+    list-style: none;
 }
 
 .footer__list--item {
@@ -208,13 +208,15 @@ font-family: 'Ubuntu Mono', monospace;*/
     display: flex;
     justify-content: center;
     align-items: center;
-
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .container__img--cover {
     display: flex;
-    width: 40%;
-    height: 50%;
+    width: 20%;
+    height: 40%;
     margin: 50px;
     padding: 0px;
     margin-right: 220px;
@@ -248,7 +250,7 @@ font-family: 'Ubuntu Mono', monospace;*/
 .icon__spotify {
     display: flex;
     width: 80px;
-    margin-top: 170px;
+    margin-top: 120px;
     padding-right: 40px;
     padding-left: 10px;
 }
@@ -261,11 +263,10 @@ font-family: 'Ubuntu Mono', monospace;*/
 .card__title--youtube {
     font-family: 'Red Hat Display', sans-serif;
     background-color: rgb(235, 210, 154);
-    width: 100vw;
+    width: 100%;
     height: 20vh;
     text-align: center;
     font-size: 40px;
-    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -301,7 +302,7 @@ font-family: 'Ubuntu Mono', monospace;*/
     width: 60%;
     background-color: rgb(86, 81, 81);
     margin: 10px;
-    padding: 20px;
+    padding: 25px;
     align-self: center;
 }
 
@@ -330,13 +331,13 @@ font-family: 'Ubuntu Mono', monospace;*/
 
 .video__idp--1 {
     grid-area: clip1;
-    width: 80%;
+    width: 350px;
     height: 100%;
 }
 
 .video__idp--2 {
     grid-area: clip2;
-    width: 100%;
+    width: 350px;
     height: 100%;
 }
 
@@ -344,15 +345,15 @@ font-family: 'Ubuntu Mono', monospace;*/
 /*estilos galeria*/
 .section__gallery {
     background-color: rgb(235, 210, 154);
-    padding: 20px;
-    padding-left: 65px;
+    padding: 10px;
+    padding-left: 30px;
     display: grid;
     grid-template-areas:
         "uno dos tres cuatro"
         "cinco seis siete ocho"
         "nueve diez once doce"
     ;
-    gap: 5px;
+    gap: 20px;
 }
 .img1 {
     grid-area: uno;
@@ -409,7 +410,7 @@ font-family: 'Ubuntu Mono', monospace;*/
     background-color: rgb(86, 81, 81);
         text-align: left;
     padding: 5px;
-    width: 100%;
+    width: 90%;
     margin: 5px;
 }
 .card__description {
@@ -417,7 +418,7 @@ font-family: 'Ubuntu Mono', monospace;*/
     color: rgb(235, 210, 154);
     font-family: 'Red Hat Display', sans-serif;
     font-size: 20px;
-    width: 100%;
+    width: 90%;
     height: fit-content;
     padding-right: 40px;
     margin: 3px;
@@ -479,6 +480,7 @@ font-family: 'Ubuntu Mono', monospace;*/
         width: 50%;
         text-align:center;
         font-size: 70px;
+        padding-left: 15px;
     }
     .card__introduction {
         width: 50%;
@@ -516,7 +518,7 @@ font-family: 'Ubuntu Mono', monospace;*/
     .card__description--grid {
         font-size: 20px;
         padding: 10px;
-        width: 60%;
+        width: 100%;
     }
     /*fin index grid*/
     /*footer*/
@@ -728,8 +730,9 @@ font-family: 'Ubuntu Mono', monospace;*/
     }
     .container__spotify {
         display: flex;
-        width: 90%;
-        margin-left: 20px;
+        width: 70%;
+        padding: 10px;
+
     }
     .container__aside--spotify {
         display: none;
@@ -760,6 +763,7 @@ font-family: 'Ubuntu Mono', monospace;*/
     ;
     gap: 10px;
 }
+
 
 .title__musica--grid {
     font-size: 30px;
@@ -800,7 +804,9 @@ font-family: 'Ubuntu Mono', monospace;*/
     "once"
     "doce"
     ;
-    gap: 5px;
+    gap: 10px;
+    justify-items: center;
+    padding-right: 40px;
 }
 .card__img--gallery {
     width: 300px;
@@ -818,19 +824,39 @@ font-family: 'Ubuntu Mono', monospace;*/
         "clip1"
         "title2"   
         "txt2"   
-        "clip2"
+        "clip2";
 }
+.title1{
+    grid-area: title1;
+}
+.txt1{
+    grid-area: txt1;
+}
+.clip1{
+    grid-area: clip1;
+}
+.title2{
+    grid-area: title2;
+}
+.txt2{
+    grid-area: txt2;
+}
+.clip2{
+    grid-area: clip2;
+}
+
 .article__blog {
-    display: flex;
+    display: flex   ;
     justify-content: center;
     margin: 5px;
     flex-wrap: wrap;
+    width: 100%;
 }
 .card__title--blog {
     font-size: 20px;
     padding: 10px;
-    width: 60%;
-    margin: 5px;
+    width: 50%;
+    margin: 0px;
 }
 .card__description {
     font-size: 15px;
@@ -838,7 +864,7 @@ font-family: 'Ubuntu Mono', monospace;*/
     padding: 20px;
 }
 .container__video--blog {
-    width: 500px;
+    width: 250px;
     padding-right: 45px;
 }
 /*fin estilos blog*/
