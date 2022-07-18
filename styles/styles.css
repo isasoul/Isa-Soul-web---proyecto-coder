@@ -39,17 +39,16 @@ font-family: 'Ubuntu Mono', monospace;*/
     display: flex;
     list-style: none;
     text-align: center;
-    justify-content: center;
-    margin-left: 55px;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 .link-light{
     color: rgb(235, 210, 154);
 }
-
 .efecto__nav:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
  }
+
 .nav__list--item{
     font-family: 'Red Hat Display', sans-serif;
     color:rgb(232, 219, 190);
@@ -93,7 +92,7 @@ font-family: 'Ubuntu Mono', monospace;*/
 .card__title {
     color: rgb(235, 210, 154);
     font-family: 'Red Hat Display', sans-serif;
-    font-size: 4rem;
+    font-size: 6rem;
     width: 20%;
     text-align: center;
     margin-top: 10%;
@@ -106,8 +105,8 @@ font-family: 'Ubuntu Mono', monospace;*/
     font-family: 'Red Hat Display', sans-serif;
     font-size: 1.1rem;
     width: 20%;
-    text-align: left;
-    margin-top: 5%;
+    text-align:justify;
+    margin-top: 3%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -143,9 +142,9 @@ font-family: 'Ubuntu Mono', monospace;*/
 .logo__ep--grid {
     grid-area: logo;
     width: 30vw;
-    padding: 100px;
+    padding: 50px;
     margin: 20px;
-    margin-left: 40px;
+    margin-left:100px;
     background-color: rgb(235, 210, 154);
 }
 
@@ -164,11 +163,11 @@ font-family: 'Ubuntu Mono', monospace;*/
     grid-area: txt;
     background-color: rgb(28, 26, 26);
     font-family: 'Red Hat Display', sans-serif;
-    font-size: 35px;
+    font-size: 1.5em;
     color: rgb(235, 210, 154);
     padding: 10px;
     width: 60%;
-    text-align: start;
+    text-align: justify;
 
 }
 
@@ -184,6 +183,8 @@ font-family: 'Ubuntu Mono', monospace;*/
 .footer_list {
     display: flex;
     list-style: none;
+    padding-right: 50px;
+    padding-top: 10px;
 }
 
 .footer__list--item {
@@ -192,8 +193,8 @@ font-family: 'Ubuntu Mono', monospace;*/
 }
 
 .footer__icon--socialmedia {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     background-color: rgb(235, 210, 154);
     border-radius: 50%;
     padding: 10px;
@@ -297,26 +298,28 @@ font-family: 'Ubuntu Mono', monospace;*/
     grid-area: title;
     background-color: rgb(28, 26, 26);
     font-family: 'Red Hat Display', sans-serif;
-    font-size: 50px;
+    font-size: 2.8em;
     color: rgb(235, 210, 154);
     width: 60%;
+    height: 75%;
     background-color: rgb(86, 81, 81);
-    margin: 10px;
     padding: 25px;
     align-self: center;
+    text-align: center  ;
 }
 
 .text__grid {
     grid-area: txt;
     background-color: rgb(86, 81, 81);
     font-family: 'Red Hat Display', sans-serif;
-    font-size: 35px;
+    font-size: 2em;
     color: rgb(235, 210, 154);
     width: 70%;
-    text-align: center;
+    text-align: justify;
     height: fit-content;
     margin-top: 60px;
     margin-right: 30px;
+    padding:10px
 
 }
 
@@ -433,8 +436,8 @@ font-family: 'Ubuntu Mono', monospace;*/
 /*estilos contacto*/
 .main__form {
     background-image: url(../assets/imagenes/galeria6-vertical.jpg);
-    width: 100vw;
-    height: 70vh;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     overflow-y: hidden;
 }
@@ -461,10 +464,21 @@ font-family: 'Ubuntu Mono', monospace;*/
     border: none;
     font-size: 20px;
 }
+.nombre{
+    padding-left: 140px;
+    width: 100%;
+}
+.mail{
+    padding-left: 170px;
+    width: 100%;
+}
+.mensaje{
+    padding-left: 330px;
+}
 .form__textarea {
-    width: 200px;
+    width: 330px;
     height: 100px;
-    margin-right: 50px;
+    margin-right: 60px;
 }
 /*fin estilos contacto*/
 @media only screen and (max-width:768px) {
@@ -480,12 +494,12 @@ font-family: 'Ubuntu Mono', monospace;*/
     .card__title {
         width: 50%;
         text-align:center;
-        font-size: 70px;
+        font-size: 80px;
         padding-left: 15px;
     }
     .card__introduction {
         width: 50%;
-        text-align: left;
+        text-align: justify;
     }
     .section__img--2 {
       display: none;
@@ -519,13 +533,16 @@ font-family: 'Ubuntu Mono', monospace;*/
     .card__description--grid {
         font-size: 20px;
         padding: 10px;
-        width: 100%;
+        width: 90%;
     }
     /*fin index grid*/
     /*footer*/
+    .footer_list{
+        padding-left: 50px;
+    }
     .footer__icon--socialmedia {
-        width: 30px;
-        height: 30px;
+        width: 55px;
+        height: 55px;
     }
     /*musica*/
     .section__spotify {
@@ -554,7 +571,7 @@ font-family: 'Ubuntu Mono', monospace;*/
     }
     /*youtube*/
     .card__title--youtube {
-        font-size: 20px;
+        font-size: 30px;
    }
     .container__video--youtube {
         width: 90%;
@@ -575,6 +592,7 @@ font-family: 'Ubuntu Mono', monospace;*/
 .title__musica--grid {
     font-size: 40px;
     width: 100%;
+    height: 100%;
     padding-left: 50px;
     margin-left: 20px;
 }
@@ -583,7 +601,7 @@ font-family: 'Ubuntu Mono', monospace;*/
     font-size: 25px;
     color: rgb(235, 210, 154);
     width: 100%;
-    text-align: center;
+    text-align: justify;
     height: fit-content;
     margin-top: 30px;
     margin-right: 0px;
@@ -642,17 +660,34 @@ font-family: 'Ubuntu Mono', monospace;*/
 }
 .card__title--blog {
     font-size: 20px;
+    width: 100%;
 }
 .card__description {
     font-size: 15px;
     width: 100%;
-    text-align: center;
+    text-align: justify;
 }
 .container__video--blog {
-    width: 500px;
+    width: 100%;
+    height: 300px;
+    padding-right: 40px;
 }
 /*fin estilos blog*/
+/*estilos contacto*/
 }
+.nombre{
+    padding-right: 85px;
+}
+.mail{
+    padding-right: 80px;
+}
+.mensaje{
+    padding-left: 115px;
+}
+.form__textarea{
+    width: 330px;
+    height: 200px;
+}   
 @media only screen and (max-width:450px) {
     /*clases del nav*/
     .header__logo--img {
@@ -677,7 +712,8 @@ font-family: 'Ubuntu Mono', monospace;*/
     }
     .card__introduction {
         width: 100%;
-        text-align: center;
+        text-align: justify;
+        font-size: 1em;
     }
     .section__img--2 {
         width: 100%;
@@ -708,16 +744,21 @@ font-family: 'Ubuntu Mono', monospace;*/
         font-size: 30px;
     }
     .card__description--grid {
-        font-size: 20px;
+        font-size: 1em;
         padding: 10px;
         width: 60%;
-        text-align: center;
+        text-align: justify;
     }
     /*fin index grid*/
     /*footer*/
+    .footer_list{
+        padding-top: 10px;
+        padding-right: 20px;
+    }
     .footer__icon--socialmedia {
-        width: 30px;
-        height: 30px;
+        width: 50px;
+        height: 50px;
+        margin-right: 15px;
     }
     /*musica*/
     .section__spotify {
@@ -764,17 +805,19 @@ font-family: 'Ubuntu Mono', monospace;*/
     ;
     gap: 10px;
 }
-
-
 .title__musica--grid {
     font-size: 30px;
 }
 .text__grid {
     grid-area: txt;
-    font-size: 15px;
+    font-size: 1em;
+    text-align: justify;
+    margin-left:30px;
 }
 .logo__idp--grid {
     grid-area: logo;
+    width: 300px;
+    height: 250px;
 }
 .video__idp--1 {
     grid-area: clip1;
@@ -856,33 +899,58 @@ font-family: 'Ubuntu Mono', monospace;*/
 .card__title--blog {
     font-size: 20px;
     padding: 10px;
-    width: 50%;
-    margin: 0px;
+    width: 90%;
 }
 .card__description {
     font-size: 15px;
-    width: 50%;
+    width: 90%;
     padding: 20px;
+    text-align: justify;
 }
 .container__video--blog {
-    width: 250px;
-    padding-right: 45px;
+    width: 100%;
+    height: 300px;
+    padding: 30px;
 }
 /*fin estilos blog*/
 /*contacto*/
 .main__form {
-    background-image: url(../assets/imagenes/galeria6-vertical.jpg);
-    width:100vw;
-    height: 70vh;
+    background-image: none;
+    background-color: rgb(28, 26, 26);
+    width:100%;
+    height:100%;
     object-fit: cover;
 }
 .card__title--form{
     font-size: 30px;
 }
 .form__contact {
-    font-size: 25px;
+    font-size: 15px;
 }
+.nombre{
+    padding: 10px;
 }
+.mail{
+    padding: 20px;
+    margin-left: 10px;
+
+}
+.mensaje{
+    padding-left:35px;
+    padding-top: 5px;
+    width: 100%;
+    text-align: center;
+}
+.form__textarea{
+    width: 250px;
+    height: 100px;
+}
+.buttom__send{
+    margin: 15px;
+}
+
+}
+
 /*fin contacto*/
 /*prueba en rama*/
 
