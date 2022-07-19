@@ -714,7 +714,7 @@ font-family: 'Ubuntu Mono', monospace;*/
     .card__introduction {
         width: 100%;
         text-align: justify;
-        font-size: 1em;
+        font-size: 0.9em;
         overflow-y: hidden;
     }
     .section__img--2 {
