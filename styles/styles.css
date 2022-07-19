@@ -689,9 +689,7 @@ font-family: 'Ubuntu Mono', monospace;*/
     height: 200px;
 }   
 @media only screen and (max-width:450px) {
-    *{
-        overflow-x: hidden;
-    }
+
     /*clases del nav*/
     .header__logo--img {
         width: 100px;
@@ -755,6 +753,9 @@ font-family: 'Ubuntu Mono', monospace;*/
     }
     /*fin index grid*/
     /*footer*/
+    .footer__section--socialmedia{
+        overflow-x: hidden;
+    }
     .footer__icon--socialmedia{
         width: 90%;
     }
@@ -816,31 +817,31 @@ font-family: 'Ubuntu Mono', monospace;*/
     padding-right:25px ;
 }
 .title__musica--grid {
-    font-size: 30px;
-    width: 100%;
+    font-size: 25px;
+    width: 70%;
     text-align: start;
 }
 .text__grid {
     grid-area: txt;
-    font-size: 1em;
+    font-size: 15px;
     text-align: justify;
-    width: 100%;
+    width: 70%;
     margin-left: 25px;
 }
 .logo__idp--grid {
     grid-area: logo;
-    width: 310px;
-    height: 250px;
+    width: 50%;
+    height: 120px;
 }
 .video__idp--1 {
     grid-area: clip1;
-    width: 95%;
-    height: 300px;
+    width: 70%;
+    height: 150px;
 }
 .video__idp--2 {
     grid-area: clip2;
-    width: 95%;
-    height: 300px;
+    width: 70%;
+    height: 150px;
 }
 /*fin estilos grid musica*/
  /*galeria*/
@@ -862,10 +863,10 @@ font-family: 'Ubuntu Mono', monospace;*/
     ;
     gap: 10px;
     justify-items: center;
-    padding-right: 40px;
 }
 .card__img--gallery {
-    width: 300px;
+    width: 90%;
+    margin-right: 10px;
 }
 /*blog*/
 .section__blog {
