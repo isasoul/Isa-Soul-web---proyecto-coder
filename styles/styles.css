@@ -689,6 +689,9 @@ font-family: 'Ubuntu Mono', monospace;*/
     height: 200px;
 }   
 @media only screen and (max-width:450px) {
+    *{
+        overflow-x: hidden;
+    }
     /*clases del nav*/
     .header__logo--img {
         width: 100px;
@@ -714,6 +717,7 @@ font-family: 'Ubuntu Mono', monospace;*/
         width: 100%;
         text-align: justify;
         font-size: 1em;
+        overflow-y: hidden;
     }
     .section__img--2 {
         width: 100%;
@@ -731,13 +735,13 @@ font-family: 'Ubuntu Mono', monospace;*/
     }
     .img__grid {
         grid-area: img;
-        width: 100vw;
+        width: 100%;
         height: 400px;
         object-fit: cover;
     }
     .logo__ep--grid {
         grid-area: logo;
-        width: 50vw;
+        width: 50%;
         margin-left: 20px;
     }
     .card__title--grid {
@@ -751,13 +755,15 @@ font-family: 'Ubuntu Mono', monospace;*/
     }
     /*fin index grid*/
     /*footer*/
+    .footer__icon--socialmedia{
+        width: 90%;
+    }
     .footer_list{
         padding-top: 10px;
-        padding-right: 20px;
     }
     .footer__icon--socialmedia {
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
         margin-right: 15px;
     }
     /*musica*/
@@ -788,10 +794,12 @@ font-family: 'Ubuntu Mono', monospace;*/
     /*youtube*/
     .card__title--youtube {
         font-size: 20px;
+        width: 90%;
+        margin-left: 16px;
    }
     .container__video--youtube {
         width: 80%;
-        margin-left: 35px;
+        padding-left: 25px;
     }
     /*seccion grid music*/
 .section__musica--grid {
@@ -804,30 +812,34 @@ font-family: 'Ubuntu Mono', monospace;*/
     "clip2"
     ;
     gap: 10px;
+    justify-items: center;
+    padding-right:25px ;
 }
 .title__musica--grid {
     font-size: 30px;
+    width: 100%;
+    text-align: start;
 }
 .text__grid {
     grid-area: txt;
     font-size: 1em;
     text-align: justify;
-    margin-left:30px;
+    width: 100%;
+    margin-left: 25px;
 }
 .logo__idp--grid {
     grid-area: logo;
-    width: 300px;
+    width: 310px;
     height: 250px;
 }
 .video__idp--1 {
     grid-area: clip1;
-    width: 80vw;
+    width: 95%;
     height: 300px;
-    padding-left: 20px;
 }
 .video__idp--2 {
     grid-area: clip2;
-    width: 80vw;
+    width: 95%;
     height: 300px;
 }
 /*fin estilos grid musica*/
@@ -946,7 +958,7 @@ font-family: 'Ubuntu Mono', monospace;*/
     height: 100px;
 }
 .buttom__send{
-    margin: 15px;
+    margin: 15px    ;
 }
 
 }
