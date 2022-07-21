@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+}
+.header__section{
+    background-color: $color-terciario;
+
+    &__nav__list{
+        list-style: none;
+    }
+    &__nav__list--item{
+        font-family: 'Red Hat Display', sans-serif;
+        color:$color-cuarto;
+    }
+}
