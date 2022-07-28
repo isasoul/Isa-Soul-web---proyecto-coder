@@ -1,0 +1,117 @@
+/*clases del main del index*/
+.main__section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main__section--video {
+    background-color: rgb(28, 26, 26);
+    margin: 0%;
+    padding: 0%;
+}
+
+.container__video {
+    width: 100%;
+    object-fit: cover;
+}
+
+.main__section--description {
+    background-color: rgb(28, 26, 26);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.card__img--1 {
+    width: 25%;
+    /*border-radius: 50%;*/
+    object-fit: cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card__title {
+    color: rgb(235, 210, 154);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 6rem;
+    width: 20%;
+    text-align: center;
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card__introduction {
+    color: rgb(232, 219, 190);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.1rem;
+    width: 20%;
+    text-align:justify;
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section__img--2 {
+    width: 25%;
+    /*border-radius: 50%;*/
+    object-fit: cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*seccion de index grid*/
+.section__grid {
+    background-color: rgb(28, 26, 26);
+    display: grid;
+    grid-template-areas:
+        "img img img"
+        "logo title title"
+        "logo txt txt"
+    ;
+    justify-items: left;
+}
+
+.img__grid {
+    grid-area: img;
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+
+}
+
+.logo__ep--grid {
+    grid-area: logo;
+    width: 30vw;
+    padding: 50px;
+    margin: 20px;
+    margin-left:100px;
+    background-color: rgb(235, 210, 154);
+}
+
+.card__title--grid {
+    grid-area: title;
+    background-color: rgb(28, 26, 26);
+    width: 80%;
+    height: 100%;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 50px;
+    color: rgb(235, 210, 154);
+    padding: 10px;
+}
+
+.card__description--grid {
+    grid-area: txt;
+    background-color: rgb(28, 26, 26);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.5em;
+    color: rgb(235, 210, 154);
+    padding: 10px;
+    width: 60%;
+    text-align: justify;
+
+}
+
+/*fin clases index grid*/
+/*fin clases de index*/

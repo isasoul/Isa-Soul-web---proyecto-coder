@@ -1,3 +1,6 @@
+/*font-family: 'Red Hat Display', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Permanent+Marker&family=Poppins:ital,wght@1,200&family=Red+Hat+Display&family=Roboto:ital,wght@0,300;0,500;1,100&family=Ubuntu+Mono&display=swap');
+
 *{
     margin: 0;
     padding:0;
@@ -13,6 +16,87 @@ body{
     }
     &__nav__list--item{
         font-family: 'Red Hat Display', sans-serif;
-        color:$color-cuarto;
+        color:$color-secundario; 
     }
 }
+.footer__section--socialmedia{
+    background-color: $color-principal;
+
+    &__icon--socialmedia {
+        background-color: $color-secundario;
+    }
+}
+/* clases del header*/
+.header__section {
+    background-color: rgb(86, 81, 81);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__logo--img {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(235, 210, 154);
+    border-radius: 50%;
+    margin: 20px;
+    margin-left: 70px;
+}
+
+.header__bar--nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav__list{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.link-light{
+    color: rgb(235, 210, 154);
+}
+.efecto__nav:hover{
+    transform: scale(1.1);
+ }
+
+.nav__list--item{
+    font-family: 'Red Hat Display', sans-serif;
+    color:rgb(232, 219, 190);
+    font-size: 30px;
+    text-decoration: none;
+}
+/*fin clases del header*/
+/*inicio clases footer*/
+.footer__section--socialmedia {
+    background-color: rgb(28, 26, 26);
+    display: flex;
+    justify-content: center;
+}
+
+.footer_list {
+    display: flex;
+    list-style: none;
+    padding-right: 50px;
+    padding-top: 10px;
+}
+
+.footer__list--item {
+    margin: 5px;
+    padding: 5px;
+}
+
+.footer__icon--socialmedia {
+    width: 70px;
+    height: 70px;
+    background-color: rgb(235, 210, 154);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/*fin clases footer*/
+
+

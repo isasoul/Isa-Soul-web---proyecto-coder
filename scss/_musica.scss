@@ -1,0 +1,144 @@
+/*clases de seccion musica*/
+/*seccion de spotify*/
+.section__spotify {
+    background-image: url(../assets/imagenes/galeria9-horizontal.jpg);
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container__img--cover {
+    display: flex;
+    width: 20%;
+    height: 40%;
+    margin: 50px;
+    padding: 0px;
+    margin-right: 220px;
+    object-fit: cover;
+
+}
+
+.container__spotify {
+    display: flex;
+    width: 30%;
+    padding-right: 20px;
+    margin: 0 auto;
+}
+
+.container__aside--spotify {
+    display: flex;
+    margin-left: 50px;
+}
+
+.card__title--spotify {
+    display: flex;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 35px;
+    color: rgb(28, 26, 26);
+    width: 40%;
+    text-align: center;
+    align-items: center;
+    font-weight: 800;
+}
+
+.icon__spotify {
+    display: flex;
+    width: 100px;
+    margin-top: 120px;
+    padding-right: 40px;
+    padding-left: 10px;
+}
+/*fin seccion spotify*/
+/*seccion youtube*/
+.section__youtube {
+    background-color: rgb(28, 26, 26);
+    width: 100%;
+}
+.card__title--youtube {
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: rgb(235, 210, 154);
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container__video--youtube {
+    width: 30%;
+    margin: 10px;
+    margin-left: 25px;
+}
+
+/*seccion grid music*/
+.section__musica--grid {
+    display: grid;
+    grid-template-areas:
+        " title txt logo"
+        " clip1 txt clip2"
+        " clip1 txt clip2"
+    ;
+    background-color: rgb(28, 26, 26);
+    justify-items: center;
+    padding: 20px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+
+}
+
+.title__musica--grid {
+    grid-area: title;
+    background-color: rgb(28, 26, 26);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 2.8em;
+    color: rgb(235, 210, 154);
+    width: 60%;
+    height: 75%;
+    background-color: rgb(86, 81, 81);
+    padding: 25px;
+    align-self: center;
+    text-align: center  ;
+}
+
+.text__grid {
+    grid-area: txt;
+    background-color: rgb(86, 81, 81);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 2em;
+    color: rgb(235, 210, 154);
+    width: 70%;
+    text-align: justify;
+    height: fit-content;
+    margin-top: 60px;
+    margin-right: 30px;
+    padding:10px
+
+}
+
+.logo__idp--grid {
+    grid-area: logo;
+    width: 25vw;
+    height: 70%;
+    background-color: rgb(28, 26, 26);
+    margin: 20px;
+    margin-top: 60px;
+}
+
+.video__idp--1 {
+    grid-area: clip1;
+    width: 350px;
+    height: 100%;
+}
+
+.video__idp--2 {
+    grid-area: clip2;
+    width: 350px;
+    height: 100%;
+}
+
+/*fin estilos grid musica*/

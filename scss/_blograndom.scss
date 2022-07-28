@@ -1,0 +1,34 @@
+/*estilos blog random*/
+.section__blog {
+    background-color: rgb(28, 26, 26);
+    border: solid rgb(235, 210, 154);
+    padding: 5px;
+    display: flex;
+}
+.card__title--blog {
+    color: rgb(132, 242, 242);
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    background-color: rgb(86, 81, 81);
+        text-align: left;
+    padding: 5px;
+    width: 90%;
+    margin: 5px;
+}
+.card__description {
+    background-color: rgb(86, 81, 81);
+    color: rgb(235, 210, 154);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 20px;
+    width: 90%;
+    height: fit-content;
+    padding-right: 40px;
+    margin: 3px;
+    text-align: left;
+}
+.container__video--blog {
+    width:80%;
+    height: 400px;
+    padding-left: 50px;
+}
+/*fin estilos blog*/
