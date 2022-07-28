@@ -1,4 +1,28 @@
-$color-principal:  rgb(28, 26, 26);
-$color-secundario:rgb(235, 210, 154) ;
-$color-terciario:  rgb(86, 81, 81);
-$color-cuarto:rgb(232, 219, 190);   
+/*map de colores aplicado en general.scss*/
+$colores: (
+    color-principal:  rgb(28, 26, 26),
+    color-secundario:rgb(235, 210, 154),
+    color-terciario:  rgb(86, 81, 81),
+    color-cuarto:rgb(232, 219, 190),
+);
+
+
+/*extend aplicado en contacto*/
+%formulario{
+    font-family: 'Red Hat Display', sans-serif;
+    color: rgb(132, 242, 242);
+    text-align: center;
+}
+/*mixin en index*/
+@mixin index-main ($fontsz, $txta, $martop){
+    color: rgb(232, 219, 190);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: $fontsz;
+    width: 20%;
+    text-align:$txta;
+    margin-top: $martop;
+    display: flex;
+    flex-wrap: wrap;
+}
+    
+  

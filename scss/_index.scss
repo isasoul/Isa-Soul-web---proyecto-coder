@@ -1,4 +1,13 @@
+@import "./base/variables";
 /*clases del main del index*/
+/*mixin*/
+.card__title{
+    @include index-main (6rem, center, 10%);
+}
+.card__introduction{
+    @include index-main( 1.1rem, justify, 3%);
+}
+
 .main__section {
     display: flex;
     flex-wrap: wrap;
@@ -31,27 +40,6 @@
     flex-wrap: wrap;
 }
 
-.card__title {
-    color: rgb(235, 210, 154);
-    font-family: 'Red Hat Display', sans-serif;
-    font-size: 6rem;
-    width: 20%;
-    text-align: center;
-    margin-top: 10%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.card__introduction {
-    color: rgb(232, 219, 190);
-    font-family: 'Red Hat Display', sans-serif;
-    font-size: 1.1rem;
-    width: 20%;
-    text-align:justify;
-    margin-top: 3%;
-    display: flex;
-    flex-wrap: wrap;
-}
 
 .section__img--2 {
     width: 25%;

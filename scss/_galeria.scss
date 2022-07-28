@@ -1,0 +1,54 @@
+/*estilos galeria*/
+.section__gallery {
+    background-color: rgb(235, 210, 154);
+    padding: 10px;
+    padding-left: 30px;
+    display: grid;
+    grid-template-areas:
+        "uno dos tres cuatro"
+        "cinco seis siete ocho"
+        "nueve diez once doce"
+    ;
+    gap: 20px;
+}
+.img1 {
+    grid-area: uno;
+}
+.img2 {
+    grid-area: dos;
+}
+.img3 {
+    grid-area: tres;
+}
+.img4 {
+    grid-area: cuatro;
+}
+.img5 {
+    grid-area: cinco;
+}
+.img6 {
+    grid-area: seis;
+}
+.img7 {
+    grid-area: siete;
+}
+.img8 {
+    grid-area: ocho;
+}
+.img9 {
+    grid-area: nueve;
+}
+.img10 {
+    grid-area: diez;
+}
+.img11 {
+    grid-area: once;
+}
+.img{
+    grid-area: doce;
+}
+.card__img--gallery {
+    width: 300px;
+    object-fit: cover;
+}
+/*fin estilos galeria*/

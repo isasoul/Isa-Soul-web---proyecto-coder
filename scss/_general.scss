@@ -9,21 +9,21 @@ body{
     font-family: 'Red Hat Display', sans-serif;
 }
 .header__section{
-    background-color: $color-terciario;
+    background-color: map-get($colores,color-terciario);
 
     &__nav__list{
         list-style: none;
     }
     &__nav__list--item{
         font-family: 'Red Hat Display', sans-serif;
-        color:$color-secundario; 
+        color:map-get($colores,color-secundario); 
     }
 }
 .footer__section--socialmedia{
-    background-color: $color-principal;
+    background-color: map-get($colores,color-principal );
 
     &__icon--socialmedia {
-        background-color: $color-secundario;
+        background-color:map-get($colores,color-secundario);
     }
 }
 /* clases del header*/
