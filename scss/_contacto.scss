@@ -1,23 +1,24 @@
 @import "./base/variables";
 /*estilos contacto*/
 /*ejemplo extend*/
+.main__form {
+    background-image: url(../assets/imagenes/galeria6-vertical.jpg);
+    width: 100%;
+    object-fit: cover;
+    overflow-y: hidden;
+}
 .form__contact{
     @extend %formulario;
     font-size: 30px;
     margin: 50px;
+
 }
 .card__title--form{
     @extend %formulario;
     font-size: 50px;
     margin:20px;
 }
-.main__form {
-    background-image: url(../assets/imagenes/galeria6-vertical.jpg);
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    overflow-y: hidden;
-}
+
 .buttom__send {
     background-color: rgb(235, 210, 154);
     width: 100px;

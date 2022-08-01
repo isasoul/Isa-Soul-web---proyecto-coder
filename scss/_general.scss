@@ -8,6 +8,7 @@
 body{
     font-family: 'Red Hat Display', sans-serif;
 }
+
 .header__section{
     background-color: map-get($colores,color-terciario);
 
@@ -75,6 +76,7 @@ body{
     background-color: rgb(28, 26, 26);
     display: flex;
     justify-content: center;
+
 }
 
 .footer_list {

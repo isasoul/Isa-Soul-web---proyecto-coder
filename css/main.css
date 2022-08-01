@@ -379,7 +379,8 @@ body {
   background-color: #1c1a1a;
   border: solid #ebd29a;
   padding: 5px;
-  display: flex; }
+  display: flex;
+  height: 100%; }
 
 .card__title--blog {
   color: #84f2f2;
@@ -418,6 +419,12 @@ body {
 /*mixin en index*/
 /*estilos contacto*/
 /*ejemplo extend*/
+.main__form {
+  background-image: url(../assets/imagenes/galeria6-vertical.jpg);
+  width: 100%;
+  object-fit: cover;
+  overflow-y: hidden; }
+
 .form__contact {
   font-size: 30px;
   margin: 50px; }
@@ -425,13 +432,6 @@ body {
 .card__title--form {
   font-size: 50px;
   margin: 20px; }
-
-.main__form {
-  background-image: url(../assets/imagenes/galeria6-vertical.jpg);
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  overflow-y: hidden; }
 
 .buttom__send {
   background-color: #ebd29a;
