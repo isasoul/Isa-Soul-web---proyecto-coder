@@ -6,6 +6,7 @@
     width: 100%;
     object-fit: cover;
     overflow-y: hidden;
+    min-height: 100vh
 }
 .form__contact{
     @extend %formulario;
