@@ -449,7 +449,7 @@ body {
   width: 100%; }
 
 .mail {
-  padding-left: 170px;
+  padding-left: 135px;
   width: 100%; }
 
 .mensaje {
@@ -802,15 +802,14 @@ body {
     padding: 10px; }
   .mail {
     padding: 20px;
-    margin-left: 10px; }
+    margin-left: 0px; }
   .mensaje {
     padding-left: 35px;
     padding-top: 5px;
-    width: 100%;
-    text-align: center; }
+    width: 100%; }
   .form__textarea {
-    width: 250px;
-    height: 100px; }
+    width: 150px;
+    height: 250px; }
   .buttom__send {
     margin: 15px; } }
 
